@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { MapPin, Phone, Search, MessageCircle, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+// import { Input } from "@/components/ui/input"
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 
 export default function VastuConsultantPageComponent() {
@@ -92,7 +92,7 @@ export default function VastuConsultantPageComponent() {
           </Button>
         </section>
 
-        <section className="p-12" ref={(el) => (fadeInRef.current[0] = el)}>
+        <section className="p-12" ref={(el) => { fadeInRef.current[0] = el }}>
           <h2 className="text-3xl font-bold mb-6">Services</h2>
           <div className="flex flex-col md:flex-row gap-8">
             <div className="flex-1">
@@ -109,7 +109,7 @@ export default function VastuConsultantPageComponent() {
           </div>
         </section>
 
-        <section className="bg-blue-200 p-12 text-center" ref={(el) => (fadeInRef.current[1] = el)}>
+        <section className="bg-blue-200 p-12 text-center" ref={(el) => { fadeInRef.current[1] = el }}>
           <h2 className="text-3xl font-bold mb-6">Location</h2>
           <Button onClick={handleShowMap} size="lg" className="bg-blue-600 text-white">
             <MapPin className="mr-2" />
@@ -122,7 +122,7 @@ export default function VastuConsultantPageComponent() {
           )}
         </section>
 
-        <section className="p-12" ref={(el) => (fadeInRef.current[2] = el)}>
+        <section className="p-12" ref={(el) => { fadeInRef.current[2] = el }}>
           <h2 className="text-3xl font-bold mb-6">Photo Carousel</h2>
           <div className="relative">
             <div className="overflow-hidden">
